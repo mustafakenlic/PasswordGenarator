@@ -22,7 +22,7 @@ passLenghtInput.onchange = ()=> {
     const passLenght = passLenghtInput.value;
     if(passLenght < 10){
         passLenghtInput.value = 10;
-    }else if(passLenght > 10){
+    }else if(passLenght > 50){
        passLenghtInput.value = 50; 
     }
 }
