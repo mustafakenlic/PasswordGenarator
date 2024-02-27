@@ -1,5 +1,3 @@
-This Code wirten as a proctise for Scrimba Course, this is very simple code but uploadet as part of react.js traning course
+This Code written as a part of Scrimba Course and it's generates strong password 
 
-- [Scrimba Courses](https://scrimba.com/allcourses)
-
-Happy Coding!
+[Strong Password Generator](https://scrim-parsswordgenerator.mustafakenlic.dev/)https://scrim-parsswordgenerator.mustafakenlic.dev/)
