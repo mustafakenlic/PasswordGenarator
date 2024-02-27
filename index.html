@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Generate a <br>
+            <span>random password</span></h1>
+            <p class="description">Never use an insecure password again.</p>
+            
+            <div class="passGenerator">
+                <div class="marginBottom">
+                    <label for="passLenght">Password Lenght (min:10 - max:50) </label>
+                    <input type="number" value="15" class="inputStyle" min="10" max="50" id="passLenght">
+                </div>
+                <div class="options marginBottom">
+                                        
+                    <div class="option">
+                        <input type="checkbox" id="lowerCase" checked>
+                        <span class="checkStyle" aria-hidden="true"></span>
+                        <label for="lowerCase">Lower Case</label>                        
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="upperCase" checked>
+                        <span class="checkStyle" aria-hidden="true"></span>
+                        <label for="upperCase">Upper Case</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="number" checked>
+                        <span class="checkStyle" aria-hidden="true"></span>
+                        <label for="number">Number</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="characters" checked>
+                        <span class="checkStyle" aria-hidden="true"></span>
+                        <label for="characters">Characters</label>
+                    </div>
+                </div> 
+                <div class="marginBottom"> 
+                    <button id="generate" class="button">Generate passwords</button>     
+                </div>               
+            </div>          
+            
+            <hr aria-hidden="true">
+            
+            <div class="genrated">
+                <div class="inputStyle" id="passOne" title="click to copy">
+                    <span class="password"></span>
+                    <span class="copy">🗐</span>
+                </div>
+                
+                <div class="inputStyle" id="passTwo"  title="click to copy">
+                    <span class="password"></span>
+                    <span class="copy">🗐</span>
+                </div>
+            </div>
+            
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

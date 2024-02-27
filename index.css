@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #1F2937;
+
+}
+
+.container{
+    background: #ECFDF5;
+    padding: 50px;
+    max-width: 600px; 
+    margin: 50px auto; /* 100px space at top and bottom*/
+}
+
+.title{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 46px;
+    line-height: 40px;
+    color:  #111827;
+    margin: 20px 0 0 0;
+;
+}
+
+.title span{
+    color: #10B981;
+}
+
+.description{
+    color: #6B7280;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px 0 0 0;
+}
+
+.passGenerator{    
+    margin: 51px 0 0 0;  
+}
+.passGenerator div.marginBottom{    
+    margin: 0 0 30px 0;  
+}
+
+
+label{
+    color: #6B7280;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 10px 0 0 0;
+}
+
+
+/*remove arrows from input type number*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*remove arrows from input type number END*/
+
+.inputStyle{
+    background: #273549;
+    border: none;
+    border-radius: 6px;
+    color: #10B981;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 16px;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.option{
+    flex-shrink: 0;
+    margin: 0;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.option label{    
+    position: relative;
+    cursor: pointer;
+    padding: 2px 0 2px 25px;
+    margin: 0 0 0 -25px;
+    z-index: 10;
+    display: inline-block;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    
+}
+
+.checkStyle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #273549;
+}
+.option input ~ .checkStyle {
+  background-color: #273549;
+}
+.option input:checked ~ .checkStyle {
+  background-color: #10B981;
+}
+
+.checkStyle:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.option input:checked ~ .checkStyle:after {
+  display: block;
+}
+
+.option .checkStyle:after {
+  left: 6px;
+  top: 0;
+  width: 4px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*remove arrows from input type number END*/
+
+.button{
+    border: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    background: #10B981;
+    padding: 9px 15px;
+    border-radius: 6px;  
+    margin: 0;
+    cursor: pointer;
+}
+
+
+.genrated{
+    display: flex;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.genrated .inputStyle{
+    flex-shrink: 0;
+    min-width: 240px;
+    padding-right: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.genrated .inputStyle .copy{
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    right: 5px;
+}
