@@ -1,3 +1,3 @@
-This Code written as a part of Scrimba Course and it's generates strong password 
+This is a strong password generator. Writen for part of application and added a new desing for general use. 
 
-[Strong Password Generator](https://scrim-parsswordgenerator.mustafakenlic.dev/)
+[Strong Password Generator](https://parsswordgenerator.mustafakenlic.dev/)
