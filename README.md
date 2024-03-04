@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center">Strong Password Generator</h1>
+<h1>Strong Password Generator</h1>
 
 This strong password generator, written for part of application and added a new design for public use.
 
