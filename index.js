@@ -1,9 +1,9 @@
 // define the usable characters
-let  charactersForPass = []; // going to be used for generate a list base on options
-const lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-const upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-const numbers = [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-const characters = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
+let  charactersForPass = []; // going to be used for generate a list base on options
+const lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+const upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+const numbers = [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+const characters = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
 
 
 // define the dom objects
@@ -32,7 +32,7 @@ passLenghtInput.onchange = ()=> {
 // create usable characters list based on selected options
 const generatePasswordCharList = () => {
     // clean charactersForPass
-    charactersForPass = [];
+    charactersForPass = [];
     
     if(lowerCaseCheckBox.checked){
         charactersForPass.push(...lowerCase)
