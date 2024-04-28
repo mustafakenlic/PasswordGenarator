@@ -1,7 +1,10 @@
 <div align="center">
 <h1>Strong Password Generator</h1>
 
-This strong password generator, written for part of application and added a new design for public use.
+I got tired of spending time finding a password generator every time I needed to create a new password, so I made myself a strong password generator. I'm leaving it below for anyone who needs it to use.
+
+Use it without ads and without a lot of unnecessary time wasting :)
+
 
  [Strong Password Generator](https://parsswordgenerator.mustafakenlic.dev/)
   
